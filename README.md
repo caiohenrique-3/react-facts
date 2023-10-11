@@ -4,4 +4,4 @@ Explore a small collection of interesting facts about React.js with this simple 
 
 ## Preview
 
-![Screenshot1]("./src/assets/showcase.png")
+![Screenshot1](src/assets/showcase.png)
