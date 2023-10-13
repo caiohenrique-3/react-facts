@@ -1,6 +1,6 @@
 import reactLogo from "../assets/react.svg";
 
-function GetNavbar() {
+function GetHeader() {
   return (
     <navbar>
       <img
@@ -14,4 +14,4 @@ function GetNavbar() {
   );
 }
 
-export default GetNavbar;
+export default GetHeader;
