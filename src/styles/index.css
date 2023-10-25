@@ -63,6 +63,16 @@ navbar h4 {
   padding-inline-start: 1rem;
 }
 
+navbar a {
+  color: white;
+  text-underline-offset: 0.2rem;
+}
+
+navbar a:focus,
+navbar a:hover {
+  color: #61dafb;
+}
+
 main {
   padding: 2rem 1rem 0 2rem;
   max-inline-size: 66ch;
