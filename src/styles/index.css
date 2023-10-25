@@ -35,7 +35,7 @@ body {
   color: #deebf8;
 }
 
-navbar {
+header {
   display: flex;
   align-items: center;
   padding: 1rem 1rem 1rem 1rem;
@@ -59,17 +59,17 @@ navbar {
   font-size: 1.2rem;
 }
 
-navbar h4 {
+header h4 {
   padding-inline-start: 1rem;
 }
 
-navbar a {
+header a {
   color: white;
   text-underline-offset: 0.2rem;
 }
 
-navbar a:focus,
-navbar a:hover {
+header a:focus,
+header a:hover {
   color: #61dafb;
 }
 

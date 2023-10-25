@@ -2,7 +2,7 @@ import reactLogo from "../assets/react.svg";
 
 function GetHeader() {
   return (
-    <navbar>
+    <header>
       <img
         className="logo-img"
         src={reactLogo}
@@ -14,7 +14,7 @@ function GetHeader() {
         {" "}
         - Project 1
       </h4>
-    </navbar>
+    </header>
   );
 }
 
