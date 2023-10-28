@@ -21,3 +21,4 @@ project:
 
 - [React Course](https://youtube.com/watch?v=bMknfKXIFA8)
 - [Google Webfonts Helper](https://gwfh.mranftl.com/fonts)
+- [CSS for the Theme Switcher](https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8)
