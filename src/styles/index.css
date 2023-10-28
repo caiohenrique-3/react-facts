@@ -30,9 +30,16 @@
   font-size: clamp(1rem, 0.25rem + 1.5vw, 1.3rem);
 }
 
+:root {
+  --bg-color: white;
+  --text-color: black;
+  --header-bg-color: black;
+  --header-text-color: white;
+}
+
 body {
-  background-color: #282d35;
-  color: #deebf8;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 header {
@@ -40,8 +47,8 @@ header {
   align-items: center;
   padding: 1rem 1rem 1rem 1rem;
   height: 4rem;
-  background-color: #21222a;
-  color: white;
+  background-color: var(--header-bg-color);
+  color: var(--header-text-color);
   font-weight: 600;
 }
 
@@ -102,12 +109,78 @@ main ul li:last-child {
   padding-block-end: 2rem;
 }
 
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+
+  em {
+    margin-left: 0.625rem;
+    font-size: 1rem;
+  }
+}
+.theme-switch {
+  display: inline-block;
+  height: 2.125rem;
+  position: relative;
+  width: 3.75rem;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 0.25rem;
+  content: "";
+  height: 1.625rem;
+  left: 0.25rem;
+  position: absolute;
+  transition: 0.4s;
+  width: 1.625rem;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(1.625rem);
+}
+
+.slider.round {
+  border-radius: 2.125rem;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 footer {
-  background-color: #21222a;
-  color: white;
+  background-color: var(--header-bg-color);
+  color: var(--header-text-color);
   padding: 1rem 1rem 1rem 1rem;
   margin-block-start: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer a {
+  color: var(--header-text-color);
+}
+
+footer a:hover {
+  font-size: 1.5rem;
 }
