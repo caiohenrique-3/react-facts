@@ -39,6 +39,8 @@ export default function ThemeSwitch() {
     "--text-color": "black",
     "--header-bg-color": "black",
     "--header-text-color": "white",
+    "--logo-text-color": "white",
+    "--marker-color": "black",
   };
 
   const darkTheme = {
@@ -46,6 +48,8 @@ export default function ThemeSwitch() {
     "--text-color": "#deebf8",
     "--header-bg-color": "#21222a",
     "--header-text-color": "white",
+    "--logo-text-color": "#61dafb",
+    "--marker-color": "#61dafb",
   };
 
   return (

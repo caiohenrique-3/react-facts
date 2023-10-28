@@ -35,6 +35,8 @@
   --text-color: black;
   --header-bg-color: black;
   --header-text-color: white;
+  --logo-text-color: white;
+  --marker-color: black;
 }
 
 body {
@@ -59,7 +61,7 @@ header {
 }
 
 .logo-text {
-  color: #61dafb;
+  color: var(--logo-text-color);
   padding-inline-start: 0.2rem;
   margin-inline-end: auto;
   font-weight: 700;
@@ -68,16 +70,6 @@ header {
 
 header h4 {
   padding-inline-start: 1rem;
-}
-
-header a {
-  color: white;
-  text-underline-offset: 0.2rem;
-}
-
-header a:focus,
-header a:hover {
-  color: #61dafb;
 }
 
 main {
@@ -91,7 +83,7 @@ main h1 {
 }
 
 main ul ::marker {
-  color: #61dafb;
+  color: var(--marker-color);
   font-size: 1.4rem;
 }
 
@@ -179,8 +171,11 @@ footer {
 
 footer a {
   color: var(--header-text-color);
+  text-underline-offset: 0.2rem;
 }
 
-footer a:hover {
+footer a:hover,
+footer a:focus {
   font-size: 1.5rem;
+  color: #61dafb;
 }
